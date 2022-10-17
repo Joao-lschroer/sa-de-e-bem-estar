@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital@0;1&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+/* font-family: 'Alkalami', serif; */
+
+
+/* Zerando o html */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: 100% auto;
+    background: rgb(129, 187, 142);
+}
+
+body p{
+    margin: 10px 40px;
+    line-height: 2;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background:linear-gradient(rgb(47, 77, 53) 0%, rgb(38, 133, 38 ) 30% , rgb(118, 211, 11) 90%);
+    display: block;
+    background-size: 100% auto;
+    position: relative;
+
+}
+
+header img{
+    animation: img-header 2s ease-out;
+}
+
+section h2,p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+section h2{
+    font-size: 28px;
+}
+
+.img-header{
+    animation: img-header 1s ease-out backwards;
+    animation-delay: .2s;
+}
+
+
+.title-header{
+    top: 10px;
+    left: 110px;
+    font-size: 22px;
+    /* display: block; */
+    position: absolute;
+}
+
+.title-header h1{
+    width: 100%;
+    font-family: 'Alkalami', serif;
+    font-size: 36px;
+    color: rgb(3, 43, 3);
+    animation: header-animation 1.2s backwards ease-out;
+}
+
+.title-header h1:hover{
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}   
+
+.nav-header{
+    position: absolute;
+    right: 100px;
+    top:15px;
+    padding: 10px;
+    display: block;
+    animation: header-animation 1.2s backwards ease-out ;
+    animation-delay: .5s;
+}
+
+.nav-options li{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: 'Alkalami', sans-serif;
+    color: rgb(3,43,3);
+}
+
+.nav-options li a{
+    text-decoration: none;
+    color: rgb(3,43,3);
+}
+
+.nav-options li a:hover{
+    color: white;
+    transition: 1s;
+}
+
+.section-default{   
+    display: block;
+    width: 90%;
+    height: 300px;
+    margin: 30px auto;
+    background-image: linear-gradient(90deg, rgb(12, 92, 12) 0%, rgb(77, 233, 77) 70%, rgb(192, 240, 18) 90%);
+    border-radius: 23px;
+    padding-top: 6px;
+}
+
+.section-text{
+    width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+    /* display: block; */
+    overflow: auto;
+    animation: img-header 1s ease-in-out backwards;
+    animation-delay: .5s;
+}
+
+.section-text h2{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.cards-sports{
+    margin-top: 15px;
+    width: 100%;
+    height: 160px;
+
+}
+
+.card1{
+    float: left;
+    margin-left: 2.5%;
+    border-radius: 10px;
+}
+
+.card2, .card3, .card4, .card5{
+    margin-left: 1%;
+    border-radius: 10px;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover{
+    scale: 1.1;
+    transition: .5s;
+}
+
+/* CSS da tabela de academia */
+
+.table-acad, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-acad{
+    margin: auto;
+    width: 80%;
+}
+
+.table-acad th{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 4px;
+    background: rgb(23, 192, 113);
+}
+
+.table-acad td{
+    text-align: center;
+    padding: 4px;
+}
+
+.table-acad td:hover{
+    background: rgb(223, 217, 217);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer-page{
+    background: rgb(12, 117, 65);
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.copyright{
+    line-height: 80px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.copyright:hover{
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.footer-redes{
+    position: absolute;
+    right: 280px;
+    top: 25px;
+}
+
+.footer-redes  li{
+    display: inline-block;
+    padding: 0px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+.footer-redes a{
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-redes a:hover{
+    color: white;
+    scale: 1.5;
+    transition: .8s ;
+}
+
+/* Animações */
+
+@keyframes header-animation{
+
+
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    
+    25%{
+        transform: translateY(-100px);
+    }
+
+    50%{
+        transform: translateY(30px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+
+@keyframes img-header{
+
+    0%{
+        opacity: 0;
+        transform: translate(-1300px);
+    }
+
+    80%{
+        transform: translateX(100px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+
+
+
+
+
+
+
+
