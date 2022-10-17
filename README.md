@@ -1,6 +1,6 @@
 ![preview](./github/preview.png)
 
-Primeiro projeto pessoal constrúido para atividade
+Primeiro projeto pessoal construído para atividade
 extensionista da universidade UNINTER.
 
 🔗[Clique aqui para acessar](https://joao-lschroer.github.io/saude-e-bem-estar/)
